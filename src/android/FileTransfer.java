@@ -325,6 +325,7 @@ public class FileTransfer extends CordovaPlugin {
                         * to the contentSize, since it is part of the body of the HTTP request.
                         */
                     StringBuilder beforeData = new StringBuilder();
+                    /*
                     try {
                         for (Iterator<?> iter = params.keys(); iter.hasNext();) {
                             Object key = iter.next();
@@ -340,13 +341,18 @@ public class FileTransfer extends CordovaPlugin {
                     } catch (JSONException e) {
                         Log.e(LOG_TAG, e.getMessage(), e);
                     }
-
+                    */
+                  
+                    /*
                     beforeData.append(LINE_START).append(BOUNDARY).append(LINE_END);
                     beforeData.append("Content-Disposition: form-data; name=\"").append(fileKey).append("\";");
                     beforeData.append(" filename=\"").append(fileName).append('"').append(LINE_END);
                     beforeData.append("Content-Type: ").append(mimeType).append(LINE_END).append(LINE_END);
+                    */
+
                     byte[] beforeDataBytes = beforeData.toString().getBytes("UTF-8");
-                    byte[] tailParamsBytes = (LINE_END + LINE_START + BOUNDARY + LINE_START + LINE_END).getBytes("UTF-8");
+                    byte[] tailParamsBytes = ("").getBytes("UTF-8");
+                    //byte[] tailParamsBytes = (LINE_END + LINE_START + BOUNDARY + LINE_START + LINE_END).getBytes("UTF-8");
 
                     
                     // Get a input stream of the file on the phone
