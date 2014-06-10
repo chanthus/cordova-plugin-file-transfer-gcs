@@ -17,6 +17,6 @@
          under the License.
 -->
 
-# org.apache.cordova.file-transfer
+# com.chanthu.evri.gcs-file-transfer
 
 Plugin documentation: [doc/index.md](doc/index.md)
